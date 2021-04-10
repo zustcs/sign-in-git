@@ -7,7 +7,7 @@
 1. `Fork`这个仓库到自己的仓库
 2. 然后在自己的仓库里提交代码
 3. 接着提交PR（Pull requests），请求将自己仓库的分支合并到实验室主仓库分支
-4. 到https://github.com/zustcs/sign-in-git/pulls手动合并代码
+4. 到 https://github.com/zustcs/sign-in-git/pulls 手动合并代码
 
 ## 上传格式
 
