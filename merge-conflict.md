@@ -2,7 +2,7 @@
 
 ## 冲突是怎么产生的
 
-![pic-example-1](.\pic\merge-conflict-2.png)
+![pic-example-1](./pic/merge-conflict-2.png)
 
 如上图所示，有三个人针对版本`C1`做了3次不同的`commit`
 
@@ -10,7 +10,7 @@
 
 那么这便意味着，这次合并是针对版本`C1`做的修改，而合并的结果就是直接将`C1`的版本改为`C2`，如下图所示：
 
-![merge-conflict](.\pic\merge-conflict-3.png)
+![merge-conflict](./pic/merge-conflict-3.png)
 
 这时候，第二个人想要合并版本`C3`到主分支`main`时就会发现，`C3`不是继承自`C2`的，这种情况想要自动合并会带来很多困难。
 
@@ -26,7 +26,7 @@
 
 比如说，最终决定采纳第二个人的方案，那么合并的结果就是：
 
-![merge-conflict](.\pic\merge-conflict-4.png)
+![merge-conflict](./pic/merge-conflict-4.png)
 
 这里之所以新建了一个版本`C5`，而不是直接修改版本号到`C3`是因为可能同时融合了两个人的方案，这时候新增一个版本是最省力的。
 
@@ -42,7 +42,7 @@
 
 出现以下界面
 
-![image-20210415135204021](.\pic\merge-conflict-5.png)
+![image-20210415135204021](./pic/merge-conflict-5.png)
 
 只需要修改代码成为最终结果就行
 
@@ -50,7 +50,7 @@
 
 全部完成后，点击`Commit merge`
 
-![image-20210415135413809](.\pic\merge-conflict-6.png)
+![image-20210415135413809](./pic/merge-conflict-6.png)
 
 注意上面有行字，这意味着这次解决冲突产生的新版本是创建在`lvyanjin:main`这个分支下的
 
@@ -60,7 +60,7 @@
 
 所有的冲突解决后，`git`就能识别到你的版本是继承自主分支版本做的修改，这时候就可以直接使用自动合并了
 
-![image-20210415140502603](.\pic\merge-conflict-7.png)
+![image-20210415140502603](./pic/merge-conflict-7.png)
 
 ### 方法二
 
@@ -78,5 +78,5 @@
 
 这里推荐第二种，将`commit`记录打包成一个提交，这样主仓库的提交记录里不会显的比较杂乱，这也是用的比较多的方式
 
-![image-20210415141115102](.\pic\merge-conflict-8.png)
+![image-20210415141115102](./pic/merge-conflict-8.png)
 
